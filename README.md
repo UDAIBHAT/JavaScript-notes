@@ -12,3 +12,4 @@ This repository contains a collection of notes, examples, and resources for lear
 To get started with this repository, you can clone it to your local machine:
 
 ```bash
+https://github.com/UDAIBHAT/JavaScript-notes.git
