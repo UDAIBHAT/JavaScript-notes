@@ -60,7 +60,7 @@ const repoCount = 50
 // console.log(name + repoCount + " Value"); wrong practice but still can be used
 
 console.log(`Hello my name is ${name} and my    repo count is ${repoCount}`); //use this instead
-
+   /// string templetes for more info.
 
 
 //                JavaScript Strings as Objects
@@ -115,8 +115,23 @@ console.log(`Hello my name is ${name} and my    repo count is ${repoCount}`); //
 
 // Comparing two JavaScript objects always returns false.
 
+// string as objeect memory allocation as heap  
 
-//           STRING METHODS
+let x = new String("aman");
+console.log(typeof x);
+console.log(x);
+
+y  =  x;
+
+y.String = "bhat";
+
+console.log(y);
+
+
+////################################################################################################################################################################################################################################################################################################################################
+
+
+//                                                 STRING METHODS
 
 
 const user ='    udai_Bhat_aman        ' 
@@ -125,8 +140,12 @@ const user ='    udai_Bhat_aman        '
 
  console.log(user.length); // returns length of string
 
+
+
+ //################################################################################################################################################################################################################################################################################################################################
  
- 
+
+
  //                  Extracting String Characters
 
 
@@ -161,12 +180,24 @@ console.log(user.at(14));  //The at() method returns the character at a specifie
 console.log(user[15]);  // returns undefined when out of index
 
 
+//################################################################################################################################################################################################################################################################################################################################
+
+
  console.log(user.toUpperCase());   
  console.log(user.toLowerCase());   
+
+
+ //################################################################################################################################################################################################################################################################################################################################
+
 
 console.log(user.trim()); // removes the white space
 console.log(user.trimStart()); // removes whitespace only from the start of a string.
 console.log(user.trimEnd());   // removes whitespace only from the end of a string.
+
+
+
+//################################################################################################################################################################################################################################################################################################################################
+
 
 console.log(user.padStart(40,"mana")); // It pads a string with another string (multiple times) until it reaches a given length.
 let khan = (user.padEnd(40,"a"));  // It pads a string with another string (multiple times) until it reaches a given length.
@@ -176,8 +207,8 @@ console.log(khan);
 
 //  To pad a number, convert the number to a string first.
 
-//  See the example below.   
 
+//################################################################################################################################################################################################################################################################################################################################
 
 
 // The repeat() method returns a string with a number of copies of a string.
@@ -189,6 +220,8 @@ console.log(khan);
 let billi = "love";
 console.log(billi.repeat(2));
 console.log(billi);
+
+//################################################################################################################################################################################################################################################################################################################################
 
                 //Replacing String Content
 
@@ -218,15 +251,58 @@ const url = "https://udai.com/udai%20bhat";
 
 console.log(url.replace('%20', '-'))
 
-console.log(url.includes('sundar'))  // return true or false 
+//################################################################################################################################################################################################################################################################################################################################
+
+console.log(url.includes('sundar'))  // return true or false includes() is case sensitive.
+
+
+
+
+// The startsWith() method returns true if a string begins with a specified value.
+// Otherwise it returns false:
+
+let k = `Hello my name is udai bhat`;
+console.log(k.startsWith(`Hello`));  //Returns true:
+console.log(k.startsWith(`my`));
+ 
+// A start position for the search can be specified:
+
+console.log(k.startsWith(`my`,5)); // return false
+console.log(k.startsWith(`my`,6)); // return true
+
+// The endsWith() method returns true if a string ends with a specified value.
+// Otherwise it returns false:
+console.log(k.endsWith(`bhat`)); // return true
+
+//Check if the 11 first characters of a string ends with "world":
+
+console.log(k.endsWith(`my`,8)); // return true
+
+
+
+//################################################################################################################################################################################################################################################################################################################################
+
+
 
  //console.log(user.__proto__);
 
 
- console.log(user.indexOf('t'));
+ console.log(user.indexOf('bhat')); // returns the first matched word/alphabet ixdex at which value is present
+ 
+ 
+ console.log(user.lastIndexOf(`a`)); // returns the last index of argument.
+// return -1 if the text is not found:
 
 
- // ===============>>>>>Extracting String Parts
+
+
+
+//################################################################################################################################################################################################################################################################################################################################
+ 
+
+
+
+// ===============>>>>>Extracting String Parts
 
 // There are 3 methods for extracting a part of a string:
 
@@ -268,15 +344,14 @@ console.log(r[0]);  // If the separator is "", the returned array will be an arr
 // If the separator is omitted, the returned array will contain the whole string in index [0].
 
 
-// string as objeect
+//################################################################################################################################################################################################################################################################################################################################
 
-let x = new String("aman");
-console.log(typeof x);
-console.log(x);
 
-y  =  x;
 
-y.String = "bhat";
 
-console.log(y);
+
+
+
+
+
 
