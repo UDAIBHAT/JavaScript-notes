@@ -21,7 +21,7 @@
 
 
 // let tony = 33;
-// console.log("The type of varriable tony is :-",typeof(tony));
+// console.log("The type of varriable tony is :-" ,typeof(tony));
 // let avengers = Number(tony);
 // console.log("After conversion to number the is value :-",avengers);
 // console.log("The type after conversion to number is :-",typeof(avengers));
@@ -30,7 +30,7 @@
 //     let tony = "33";
 //     console.log("The type of varriable tony is :-",typeof(tony));
 //     let avengers = Number(tony);
-//     console.log("After conversion to number the is value :-",avengers);
+//     console.log("After conversion to number the is value :-",avengers);S
 //     console.log("The type after conversion to number is :-",typeof(avengers));
 // }
 
@@ -230,12 +230,12 @@
 
 
 
-let a = "33abc"
-console.log(typeof(a));   // type of NAN is number
+// let a = "33abc"
+// console.log(typeof(a));   // type of NAN is number
 
 
-let b = Number(a) 
-console.log(b); 
-console.log(typeof(b));
+// let b = Number(a) 
+// console.log(b); 
+// console.log(typeof(b));
 
 

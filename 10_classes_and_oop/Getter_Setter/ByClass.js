@@ -4,7 +4,7 @@ class User {
         this.password = password
     }
 
-    get email(){
+    get gettingemail(){
         return this._email.toUpperCase()  // it is used when we are accessing value from outside the class 
                                           // their is need to return 
     }
@@ -16,7 +16,7 @@ class User {
                             // here ubderscore is used to indicate private property
     }
 
-    get password(){
+    get gettingpassword(){
         return `${this._password}udai`
     }
 
@@ -26,6 +26,14 @@ class User {
 }
 
 const hitesh = new User("h@udaibhat.ai", "abc")
-console.log(hitesh.email);
+console.log(hitesh.gettingemail);
+console.log(hitesh.gettingpassword);
+
+hitesh.password=`khan`
+console.log(hitesh.gettingpassword);
+
+
+
+
 
 

@@ -3,14 +3,23 @@ const User = {
     _password: "abc",
 
 
-    get email(){
+    get gettingemail(){
         return this._email.toUpperCase()
     },
 
-    set email(value){
+    
+
+    set settingemail(value){
         this._email = value
     }
 }
 
-const tea = Object.create(User)
-console.log(tea.email);
+const tea = Object.create(User)    // creating new instance from User object 
+
+console.log(tea.gettingemail);            // Accessing email through `getting email function` by using get keyword       
+
+tea.settingemail=`udaibhaxyz.com`     // Updating email feild through set email keyword 
+
+console.log(tea._email);  // checking updated email feild 
+
+
